@@ -16,9 +16,9 @@ function App() {
     ]);
   };
 
-  const handleDeleteClick = (name) => {
+  const handleDeleteClick = (id) => {
     let newDetails = users.filter((i) => {
-      return i.name !== name;
+      return i.id !== id;
     });
     setUsers(newDetails);
   };
@@ -36,9 +36,7 @@ function App() {
                 <p>Name: {user.name}</p>
                 <p>Password: {user.password}</p>
               </li>
-              <button onClick={() => handleDeleteClick(user.name)}>
-                Delete
-              </button>
+              <button onClick={() => handleDeleteClick(user.id)}>Delete</button>
             </ul>
           ))}
         </div>

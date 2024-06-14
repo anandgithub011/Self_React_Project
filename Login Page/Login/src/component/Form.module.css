@@ -1,0 +1,13 @@
+
+.user {
+    height: 25px;
+    width: 35%;
+    margin: 15px;
+
+}
+
+.form {
+    /* margin-top: 70px; */
+    display: flex;
+    flex-wrap: wrap;
+}

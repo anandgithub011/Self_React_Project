@@ -46,16 +46,17 @@ function App() {
         </button>
       </div>
       {data.map((i) => (
-        <div key={i.id}>
-          <p>
-            {i.title} - {i.id}
-          </p>
-          <button
-            className="btn btn-danger"
-            onClick={() => handleDeleteClick(i.id)}
-          >
-            Delete
-          </button>
+        <div key={i.id} className="container border">
+          <div className="row">
+            <p className="col-4 modal-header">{`Title Name: ${i.title}`}</p>
+            <p className="col-4 modal-header">{`ID: ${i.id}`}</p>
+            <button
+              className="btn btn-outline-danger col-2 float-end"
+              onClick={() => handleDeleteClick(i.id)}
+            >
+              Delete
+            </button>
+          </div>
         </div>
       ))}
     </>

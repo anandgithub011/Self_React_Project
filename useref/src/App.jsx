@@ -30,8 +30,6 @@ function App() {
       SetData(newData);
       ref.current.value = "";
     }
-
-    // console.log(ref.current.value);
   };
 
   const handleDeleteClick = (id) => {

@@ -15,7 +15,7 @@ function App() {
     <>
       <div className="d-inline-flex">
         <input type={password ? "password" : "text"} placeholder="Password" />
-        <div>
+        <div className="eye">
           {password ? (
             <FaRegEye onClick={handleClick} />
           ) : (

@@ -1,0 +1,12 @@
+.container {
+  margin: 130px;
+  /* text-align: center; */
+}
+
+p {
+  font-size: 25px;
+}
+
+.time-container h3{
+  font-weight: 400;
+}

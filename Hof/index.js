@@ -5,7 +5,7 @@
 // 4.reduce
 
 
-// 1. map
+// 1. map: return a new Array with the same length or same element;
 
 // let arr = [1,2,3,4,5,55,6,77,888,67];
 let arr = ["Anand", "SumanSaurav","Amit"];

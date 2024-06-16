@@ -70,45 +70,103 @@
 
 // 4. reduce: give a single value or summarise the value
 
-let arr = [1,2,3,4,5,6,7,8,9];
+// let arr = [1,2,3,4,5,6,7,8,9];
 
-let res = arr.reduce((initial,element)=>{
-    return initial+element+" ";
-},[])
-console.log(res);   //output = 1 2 3 4 5 6 7 8 9
+// let res = arr.reduce((initial,element)=>{
+//     return initial+element+" ";
+// },[])
+// console.log(res);   //output = 1 2 3 4 5 6 7 8 9
 
 // tc: O(n)
 // sc: O(n)
 
 
-let arr1= [1,2,3,4,5,6,7,8,9];
+// let arr1= [1,2,3,4,5,6,7,8,9];
 
-let res1 = arr1.reduce((initial,element)=>{
+// let res1 = arr1.reduce((initial,element)=>{
+//     return initial+element;
+// },0)
+// console.log(res1);     //output = 45 (sum of all the element)
+
+// tc: O(n)
+// sc: O(1)
+
+
+// let arr2= [1,2,3,4,5];
+
+// let res2 = arr2.reduce((initial,element)=>{
+//     return initial*element;
+// },1)
+// console.log(res2);     //output = 120 (PRODUCT of all the element with 1 which is line no. 99)
+
+// tc: O(n)
+// sc: O(1)
+
+
+// let arr3= [1,2,3,4,5];
+
+// let res3 = arr3.reduce((initial,element,index)=>{
+//     return index*element;
+// })
+// console.log(res3);     //output = 20
+
+// tc: O(n)
+// sc: O(1)
+
+
+
+
+// IMPORTANT: *Chaining of Higher Order Function*
+
+// 1.  Find the sum which are odd.
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// let res = arr.filter((el)=>{
+//     return el % 2 == 1;
+// })
+// .reduce((initial,el)=>{
+//     return initial+el;
+// })
+// console.log(res);  //output = 16 (1+3+5+7)
+
+
+//tc: O(n^2)
+//sc: O(1)
+
+
+
+// 2. print the sum of length, whose length is odd.
+
+
+// 1st method:
+
+let arr1 = ["John", "Victor", "Wilson", "Ram", "Saurav", "Suman","Anand"];
+
+let res1 = arr1.filter((el)=>{
+    return el.length % 2 === 1;
+})
+.map((el)=>{
+    return el.length;
+})
+.reduce((initial,element)=>{
     return initial+element;
 },0)
-console.log(res1);     //output = 45 (sum of all the element)
+console.log(res1)
 
-// tc: O(n)
-// sc: O(1)
+// tc: O(n^3)
+// sc:O(1)
 
+let arr2 = ["John", "Victor", "Wilson", "Ram", "Saurav", "Suman","Anand"];
 
-let arr2= [1,2,3,4,5];
-
-let res2 = arr2.reduce((initial,element)=>{
-    return initial*element;
-},1)
-console.log(res2);     //output = 120 (PRODUCT of all the element with 1 which is line no. 99)
-
-// tc: O(n)
-// sc: O(1)
-
-
-let arr3= [1,2,3,4,5];
-
-let res3 = arr3.reduce((initial,element,index)=>{
-    return index*element;
+let res2 = arr2.filter((el)=>{
+    return el.length % 2 === 1;
 })
-console.log(res3);     //output = 20
+.reduce((initial,element)=>{
+    return initial+element.length;
+},0)
+console.log(res2);
 
-// tc: O(n)
-// sc: O(1)
+// tc:O(n^2)
+// scO(1)
+
+

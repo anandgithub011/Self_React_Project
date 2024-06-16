@@ -7,7 +7,7 @@ import { useRef } from "react";
 function App() {
   const [data, SetData] = useState([]);
 
-  console.log(data);
+  // console.log(data);
 
   const ref = useRef();
   const handleAddClick = () => {
@@ -41,7 +41,11 @@ function App() {
     <>
       <div>
         <input className="form-control" type="text" ref={ref} />
-        <button className="btn btn-success" onClick={handleAddClick}>
+        <button
+          className="btn btn-success"
+          type="button"
+          onClick={handleAddClick}
+        >
           Add
         </button>
       </div>

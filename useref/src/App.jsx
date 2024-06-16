@@ -40,7 +40,12 @@ function App() {
   return (
     <>
       <div>
-        <input className="form-control" type="text" ref={ref} />
+        <input
+          className="form-control"
+          type="text"
+          placeholder="Enter Title"
+          ref={ref}
+        />
         <button
           className="btn btn-success"
           type="button"

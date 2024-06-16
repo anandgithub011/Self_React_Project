@@ -140,33 +140,74 @@
 
 // 1st method:
 
-let arr1 = ["John", "Victor", "Wilson", "Ram", "Saurav", "Suman","Anand"];
+// let arr1 = ["John", "Victor", "Wilson", "Ram", "Saurav", "Suman","Anand"];
 
-let res1 = arr1.filter((el)=>{
-    return el.length % 2 === 1;
-})
-.map((el)=>{
-    return el.length;
-})
-.reduce((initial,element)=>{
-    return initial+element;
-},0)
-console.log(res1)
+// let res1 = arr1.filter((el)=>{
+//     return el.length % 2 === 1;
+// })
+// .map((el)=>{
+//     return el.length;
+// })
+// .reduce((initial,element)=>{
+//     return initial+element;
+// },0)
+// console.log(res1)
 
 // tc: O(n^3)
 // sc:O(1)
 
-let arr2 = ["John", "Victor", "Wilson", "Ram", "Saurav", "Suman","Anand"];
+// let arr2 = ["John", "Victor", "Wilson", "Ram", "Saurav", "Suman","Anand"];
 
-let res2 = arr2.filter((el)=>{
-    return el.length % 2 === 1;
-})
-.reduce((initial,element)=>{
-    return initial+element.length;
-},0)
-console.log(res2);
+// let res2 = arr2.filter((el)=>{
+//     return el.length % 2 === 1;
+// })
+// .reduce((initial,element)=>{
+//     return initial+element.length;
+// },0)
+// console.log(res2);
 
 // tc:O(n^2)
 // scO(1)
+
+// 3. print the full name who is from India
+
+// let users = [
+//     { firstName: "Suman", lastName: "Saurav", place: "India" },
+//     { firstName: "Ram", lastName: "Kumar", place: "India" },
+//     { firstName: "Wilson", lastName: "Victor", place: "USA" },
+//     { firstName: "John", lastName: "Michael", place: "Australia" },
+//   ];
+
+// //1st method:
+
+//   let res = users.filter((el)=>{
+//     return el.place === "India";
+//   })
+//   .map((el)=>{
+//     return el.firstName+" "+el.lastName;
+//   })
+//   .forEach((el)=>{
+//     console.log(el);
+//   })
+
+
+
+let users = [
+    { firstName: "Suman", lastName: "Saurav", place: "India" },
+    { firstName: "Ram", lastName: "Kumar", place: "India" },
+    { firstName: "Wilson", lastName: "Victor", place: "USA" },
+    { firstName: "John", lastName: "Michael", place: "Australia" },
+  ];
+
+//2nd method:
+
+  let res = users.filter((el)=>{
+    return el.place === "India";
+  })
+  .forEach((el)=>{
+    console.log(el.firstName+" "+el.lastName);
+  })
+
+
 
 

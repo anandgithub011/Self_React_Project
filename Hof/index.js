@@ -26,14 +26,24 @@
 // 2. forEach: returns elements of an array on a new line
 
 // let arr = [1,2,3,4,5,6,7,8,9];
-let arr = ["Anand", "SumanSaurav","Amit"];
+// let arr = ["Anand", "SumanSaurav","Amit"];
 
-arr.forEach((el)=>{
-    console.log(el);
-});
+// arr.forEach((el)=>{
+//     console.log(el);
+// });
 
 // tc : O(n)
 // sc: O(1)
 
 
+let arr = [11,2,3,44,565,43,23,2435];
 
+let newArr = new Array();
+arr.forEach((el,index)=>{
+    console.log(index);
+    newArr.push(el*2);
+})
+console.log(newArr);
+
+// tc: O(n)
+// sc: O(n)

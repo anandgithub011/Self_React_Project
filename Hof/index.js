@@ -97,7 +97,18 @@ let arr2= [1,2,3,4,5];
 let res2 = arr2.reduce((initial,element)=>{
     return initial*element;
 },1)
-console.log(res2);     //output = 120
+console.log(res2);     //output = 120 (PRODUCT of all the element with 1 which is line no. 99)
+
+// tc: O(n)
+// sc: O(1)
+
+
+let arr3= [1,2,3,4,5];
+
+let res3 = arr3.reduce((initial,element,index)=>{
+    return index*element;
+})
+console.log(res3);     //output = 20
 
 // tc: O(n)
 // sc: O(1)

@@ -56,12 +56,48 @@
 
 // 3. filter: return a new Array which depens what's output ask
 
-let arr = ["India","Australia","London","Hongkong"];
+// let arr = ["India","Australia","London","Hongkong"];
 
-let res = arr.filter((el)=>{
-    return el[0]=="I";
-})
-console.log(res);
+// let res = arr.filter((el)=>{
+//     return el[0]=="I";
+// })
+// console.log(res);
+
+// tc: O(n)
+// sc: O(1)
+
+
+
+// 4. reduce: give a single value or summarise the value
+
+let arr = [1,2,3,4,5,6,7,8,9];
+
+let res = arr.reduce((initial,element)=>{
+    return initial+element+" ";
+},[])
+console.log(res);   //output = 1 2 3 4 5 6 7 8 9
+
+// tc: O(n)
+// sc: O(n)
+
+
+let arr1= [1,2,3,4,5,6,7,8,9];
+
+let res1 = arr1.reduce((initial,element)=>{
+    return initial+element;
+},0)
+console.log(res1);     //output = 45 (sum of all the element)
+
+// tc: O(n)
+// sc: O(1)
+
+
+let arr2= [1,2,3,4,5];
+
+let res2 = arr2.reduce((initial,element)=>{
+    return initial*element;
+},1)
+console.log(res2);     //output = 120
 
 // tc: O(n)
 // sc: O(1)

@@ -62,3 +62,6 @@ let res = arr.filter((el)=>{
     return el[0]=="I";
 })
 console.log(res);
+
+// tc: O(n)
+// sc: O(1)

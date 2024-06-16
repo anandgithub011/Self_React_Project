@@ -207,7 +207,3 @@ let users = [
   .forEach((el)=>{
     console.log(el.firstName+" "+el.lastName);
   })
-
-
-
-

@@ -192,18 +192,40 @@
 
 
 
-let users = [
-    { firstName: "Suman", lastName: "Saurav", place: "India" },
-    { firstName: "Ram", lastName: "Kumar", place: "India" },
-    { firstName: "Wilson", lastName: "Victor", place: "USA" },
-    { firstName: "John", lastName: "Michael", place: "Australia" },
-  ];
+// let users = [
+//     { firstName: "Suman", lastName: "Saurav", place: "India" },
+//     { firstName: "Ram", lastName: "Kumar", place: "India" },
+//     { firstName: "Wilson", lastName: "Victor", place: "USA" },
+//     { firstName: "John", lastName: "Michael", place: "Australia" },
+//   ];
 
-//2nd method:
+// //2nd method:
 
-  let res = users.filter((el)=>{
-    return el.place === "India";
-  })
-  .forEach((el)=>{
-    console.log(el.firstName+" "+el.lastName);
-  })
+//   let res = users.filter((el)=>{
+//     return el.place === "India";
+//   })
+//   .forEach((el)=>{
+//     console.log(el.firstName+" "+el.lastName);
+//   })
+
+// let num = 51;
+// let arr = new Array();
+// for(let i = 1; i <= num; i++){
+//     if(i%2 == 0){
+//         arr.push(i);
+//     }
+   
+// }
+// console.log(arr);
+
+function even_sum(num){
+    let sum = 0;
+    for(let i = 1; i <= num*2; i++){
+        if(i % 2 == 0){
+            sum += i;
+        }
+        // sum += i*2
+    }
+    console.log(sum);
+}
+even_sum(5);

@@ -9,27 +9,30 @@ function App() {
 
   // console.log(data);
 
-  const ref = useRef();
+  const inputUserName = useRef();
   const handleAddClick = () => {
-    ref.current.focus();
+    inputUserName.current.focus();
+
+    if (inputUserName.current.value == "") {
+      alert("Fill the Box");
+    } else {
+      let newData = [
+        ...data,
+        { id: Date.now(), title: inputUserName.current.value },
+      ];
+      SetData(newData);
+      inputUserName.current.value = "";
+    }
 
     // let newData = {
-    //   title: ref.current.value,
+    //   title: inputUserName.current.value,
     //   id: Date.now(),
     // };
     // SetData([...data, newData]);
 
-    // let newData = [...data, { id: Date.now(), title: ref.current.value }];
+    // let newData = [...data, { id: Date.now(), title: inputUserName.current.value }];
     // SetData(newData);
-    // ref.current.value = "";
-
-    if (ref.current.value == "") {
-      alert("Fill the Box");
-    } else {
-      let newData = [...data, { id: Date.now(), title: ref.current.value }];
-      SetData(newData);
-      ref.current.value = "";
-    }
+    // inputUserName.current.value = "";
   };
 
   const handleDeleteClick = (id) => {
@@ -42,9 +45,10 @@ function App() {
       <div>
         <input
           className="form-control"
-          type="text"
+
           placeholder="Enter Title"
-          ref={ref}
+          type="text"
+          ref={inputUserName}
         />
         <button
           className="btn btn-success"

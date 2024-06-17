@@ -22,7 +22,7 @@ const Form = ({ onNewInput }) => {
   };
 
   return (
-    <form className={styles.form}>
+    <form  onSubmit={handleLoginClick} className={styles.form}>
       <input
         onChange={handleNameChange}
         value={name}
@@ -37,7 +37,7 @@ const Form = ({ onNewInput }) => {
         type="text"
         placeholder="Enter Password"
       />
-      <button onClick={handleLoginClick}>Add</button>
+      <button type="submit">Add</button>
     </form>
   );
 };

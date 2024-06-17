@@ -1,0 +1,8 @@
+.display {
+    margin-left: 4px;
+    font-size: x-large;
+    height: 64px;
+    background-color: rgb(182, 224, 224);
+    border: none;
+    color: white;
+}

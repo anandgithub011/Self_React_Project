@@ -192,18 +192,20 @@
 
 
 
-let users = [
-    { firstName: "Suman", lastName: "Saurav", place: "India" },
-    { firstName: "Ram", lastName: "Kumar", place: "India" },
-    { firstName: "Wilson", lastName: "Victor", place: "USA" },
-    { firstName: "John", lastName: "Michael", place: "Australia" },
-  ];
+// let users = [
+//     { firstName: "Suman", lastName: "Saurav", place: "India" },
+//     { firstName: "Ram", lastName: "Kumar", place: "India" },
+//     { firstName: "Wilson", lastName: "Victor", place: "USA" },
+//     { firstName: "John", lastName: "Michael", place: "Australia" },
+//   ];
 
-//2nd method:
+// //2nd method:
 
-  let res = users.filter((el)=>{
-    return el.place === "India";
-  })
-  .forEach((el)=>{
-    console.log(el.firstName+" "+el.lastName);
-  })
+//   let res = users.filter((el)=>{
+//     return el.place === "India";
+//   })
+//   .forEach((el)=>{
+//     console.log(el.firstName+" "+el.lastName);
+//   })
+
+

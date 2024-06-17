@@ -192,20 +192,55 @@
 
 
 
-// let users = [
-//     { firstName: "Suman", lastName: "Saurav", place: "India" },
-//     { firstName: "Ram", lastName: "Kumar", place: "India" },
-//     { firstName: "Wilson", lastName: "Victor", place: "USA" },
-//     { firstName: "John", lastName: "Michael", place: "Australia" },
-//   ];
+let users = [
+    { firstName: "Suman", lastName: "Saurav", place: "India" },
+    { firstName: "Ram", lastName: "Kumar", place: "India" },
+    { firstName: "Wilson", lastName: "Victor", place: "USA" },
+    { firstName: "John", lastName: "Michael", place: "Australia" },
+  ];
 
-// //2nd method:
+//2nd method:
 
-//   let res = users.filter((el)=>{
-//     return el.place === "India";
-//   })
-//   .forEach((el)=>{
-//     console.log(el.firstName+" "+el.lastName);
-//   })
+  let res = users.filter((el)=>{
+    return el.place === "India";
+  })
+  .forEach((el)=>{
+    console.log(el.firstName+" "+el.lastName);
+  })
 
 
+
+
+// Q. print a ab abc abcd on new line without taking any input?
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// function printPattern() {
+//     const startCharCode = 97; // ASCII value for 'a'
+
+//     for (let i = 0; i < 4; i++) {
+//         let line = '';
+
+//         for (let j = 0; j <= i; j++) {
+//             let char = String.fromCharCode(startCharCode + j);
+//             line += char;
+//         }
+
+//         // For the second line specifically (index 1), repeat the first character
+//         // if (i == 1) {
+//         //     line += 'a';
+//         // }
+
+//         console.log(line);
+//     }
+// }
+
+// printPattern();
+
+  let str = "";
+  for(let i = 0; i < 4; i++){
+    let char = String.fromCharCode(97+i);
+    str+= char;
+  console.log(str);
+}

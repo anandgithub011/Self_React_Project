@@ -45,6 +45,7 @@ function App() {
       <div>
         <input
           className="form-control"
+
           placeholder="Enter Title"
           type="text"
           ref={inputUserName}

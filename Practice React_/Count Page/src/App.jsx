@@ -12,6 +12,7 @@ function App() {
   };
   const handleDecreaseClick = (Decvalue) => {
     setCount((previous) => previous - Decvalue);
+    setCount((previous) => previous - Decvalue);
   };
 
   return (

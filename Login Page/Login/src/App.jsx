@@ -10,14 +10,14 @@ function App() {
   // console.log(users);
 
   const handleNewInput = (InputName, InputPassword) => {
-   if(InputName == "" || InputPassword ==""){
-    alert("Fill the @username and password!")
-   }else{
-    setUsers([
-      ...users,
-      { id: Date.now(), name: InputName, password: InputPassword },
-    ]);
-   }
+    if (InputName == "" || InputPassword == "") {
+      alert("Fill the @username and password!");
+    } else {
+      setUsers([
+        ...users,
+        { id: Date.now(), name: InputName, password: InputPassword },
+      ]);
+    }
   };
 
   const handleDeleteClick = (id) => {

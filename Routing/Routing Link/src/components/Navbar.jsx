@@ -8,10 +8,18 @@ const Navbar = () => {
   return (
     <div className={styles.flex}>
       <Link to="/">
-        <h5>Home</h5>
+        <div className="navbar bg-body-tertiary">
+          <div className="container-fluid justify-content-start">
+            <p className="btn btn-outline-success me-2">Home</p>
+          </div>
+        </div>
       </Link>
       <Link to="/login">
-        <h5>Login</h5>
+        <div className="navbar bg-body-tertiary">
+          <div className="container-fluid justify-content-start">
+            <p className="btn btn-outline-success me-2">Login</p>
+          </div>
+        </div>
       </Link>
     </div>
   );

@@ -1,6 +1,4 @@
 import React from "react";
-// import Home from "./Home";
-// import Login from "./Login";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 

@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { useRef } from "react";
 
@@ -45,7 +43,6 @@ function App() {
       <div>
         <input
           className="form-control"
-
           placeholder="Enter Title"
           type="text"
           ref={inputUserName}

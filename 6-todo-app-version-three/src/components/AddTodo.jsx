@@ -32,7 +32,7 @@ function AddTodo({ onNewItem }) {
         <div className="col-6">
           <input
             type="text"
-            placeholder="Enter Todo Here"
+            placeholder="Enter TodoName Here"
             className={styles.input}
             value={todoName}
             onChange={handleTodoNameChange}

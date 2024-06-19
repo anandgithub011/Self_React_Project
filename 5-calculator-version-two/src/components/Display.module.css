@@ -1,0 +1,9 @@
+.display {
+    margin-left: 4px;
+    font-size: x-large;
+    height: 64px;
+    background-color: rgb(182, 224, 224);
+    border: 1px solid grey;
+    border-radius: 10px;
+    /* color: white; */
+}

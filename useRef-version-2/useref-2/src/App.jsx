@@ -10,7 +10,7 @@ function App() {
   const handleSubmitClick = (e) => {
     e.preventDefault();
 
-    // inputUserId.current.focus();
+    inputUserId.current.focus();
 
     if (inputUserId.current.value == "" || inputUserPass.current.value == "") {
       alert("Fill the UserId and Password");
